@@ -1,13 +1,14 @@
-import { ActionReducerMap, MetaReducer } from '@ngrx/store';
-import { environment } from '../../environments/environment';
+import { createReducer } from '@ngrx/store';
+import { AuthState, initialAuthState } from '../auth/reducers';
 
 export interface AppState {
-
+  auth: AuthState,
 }
 
-export const reducers: ActionReducerMap<AppState> = {
+export const initialAppState: AppState = {
+  auth: initialAuthState
+}
 
-};
-
-
-export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [] : [];
+export const appReducer = createReducer(
+  initialAuthState,
+)
