@@ -10,5 +10,5 @@ export const initialAppState: AppState = {
 }
 
 export const appReducer = createReducer(
-  initialAuthState,
+  initialAppState,
 )
