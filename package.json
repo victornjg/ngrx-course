@@ -28,7 +28,7 @@
     "@ngrx/data": "^8.0.1",
     "@ngrx/effects": "^12.2.0",
     "@ngrx/entity": "^8.0.1",
-    "@ngrx/router-store": "^8.0.1",
+    "@ngrx/router-store": "^12.2.0",
     "@ngrx/store": "^12.2.0",
     "@ngrx/store-devtools": "^12.2.0",
     "body-parser": "^1.18.2",
